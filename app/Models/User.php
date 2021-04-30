@@ -64,8 +64,15 @@ class User extends Authenticatable
      *
      * @var array
      */
+// User.php
+
     public function files()
-    {
-      return $this->hasMany(File::class);
-    }
+        {
+        return $this->hasMany(File::class);
+        }
+
+    public function uploads()
+        {
+        return $this->hasMany(Upload::class);
+        }
 }

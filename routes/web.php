@@ -23,3 +23,4 @@ Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
 })->name('dashboard');
 
 Route::post('file/upload', 'FileController@store')->name('file.upload');
+Route::post('upload', 'FileController@upload')->name('upload');
